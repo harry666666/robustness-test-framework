@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  test-framework:
+    build: .
+    container_name: robustness-test-framework
+    volumes:
+      - ./reports:/app/reports
+      - ./logs:/app/logs
+    environment:
+      - ENV=test
+      - BASE_URL=http://mock-server:8080
+    depends_on:
+      - mock-server
+    networks:
+      - test-network
+
+  mock-server:
+    build: .
+    container_name: mock-server
+    command: python utils/mock_server.py
+    ports:
+      - "8080:8080"
+    networks:
+      - test-network
+
+networks:
+  test-network:
+    driver: bridge
