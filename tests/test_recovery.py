@@ -1,0 +1,1 @@
+Recovery capability tests including auto retry, circuit breaker, graceful degradation, chaos recovery, and service recovery after failure
