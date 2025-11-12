@@ -1,0 +1,20 @@
+# 极氪二手车专用配置
+# Author: harry666666
+
+api:
+  base_url: "http://zeekr-api.com"
+  timeout: 8
+
+endpoints:
+  identify: "/api/identify"
+  transfer: "/api/transfer/create"
+  vehicle_detail: "/api/vehicle/detail"
+
+test_data:
+  valid_vin: "LGBH9JUE0HF123456"
+  valid_user_id: "U123"
+  valid_service_code: "SC123"
+
+business_rules:
+  vin_length: 17
+  max_batch_size: 1500

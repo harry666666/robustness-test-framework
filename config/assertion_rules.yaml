@@ -1,0 +1,17 @@
+# 断言规则配置
+# Author: harry666666
+
+rules:
+  response_time:
+    normal: 1000  # ms
+    slow: 3000
+    timeout: 5000
+  
+  status_codes:
+    success: [200, 201, 204]
+    client_error: [400, 401, 403, 404]
+    server_error: [500, 502, 503, 504]
+  
+  required_headers:
+    - "Content-Type"
+    - "X-Request-ID"
