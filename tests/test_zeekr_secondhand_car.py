@@ -1,0 +1,1 @@
+Zeekr secondhand car business tests including vehicle identification, transfer creation, vehicle detail query, invalid VIN rejection, concurrent transfer requests, and transfer status query

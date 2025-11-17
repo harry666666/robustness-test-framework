@@ -1,0 +1,19 @@
+# 环境配置
+# Author: harry666666
+
+environments:
+  dev:
+    base_url: "http://dev-api.example.com"
+    timeout: 10
+  
+  test:
+    base_url: "http://test-api.example.com"
+    timeout: 8
+  
+  staging:
+    base_url: "http://staging-api.example.com"
+    timeout: 5
+  
+  prod:
+    base_url: "http://api.example.com"
+    timeout: 3
